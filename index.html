@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kaspy - Математический калькулятор для решения арифметики, тригонометрии, интегралов и физических задач.">
+  <meta name="keywords" content="Калькулятор, Арифметика, Тригонометрия, Интегралы, Физика, Математика">
+  <meta name="author" content="Сунатов Салохиддин Асхобиддинович">
+  <title>Kaspy - Математический калькулятор</title>
+  <!-- Подключаем шрифт Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Подключаем иконки Font Awesome для логотипа -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключаем math.js для вычислений -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.5.0/math.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <!-- Логотип с иконкой -->
+        <i class="fas fa-calculator"></i> <h1>Kaspy</h1>
+      </div>
+      <p>Математический калькулятор для всех задач</p>
+    </header>
+
+    <!-- Раздел выбора предмета -->
+    <div class="task-selector">
+      <h2>Выберите предмет</h2>
+      <select id="taskSelect" onchange="updateTaskForm()">
+        <option value="arithmetic">Арифметика</option>
+        <option value="trig">Тригонометрия</option>
+        <option value="integral">Интегралы</option>
+        <option value="physics">Физика</option>
+      </select>
+    </div>
+
+    <!-- Форма для арифметики -->
+    <div id="arithForm">
+      <h2>Решение арифметических задач</h2>
+      <input id="arithInput" type="text" placeholder="Введите выражение" autofocus>
+      <button onclick="calculateArithmetic()">Вычислить</button>
+      <p id="arithResult"></p>
+    </div>
+
+    <!-- Форма для тригонометрии -->
+    <div id="trigForm" style="display: none;">
+      <h2>Тригонометрия</h2>
+      <input id="angle" type="number" placeholder="Угол (градусы)" autofocus>
+      <button onclick="calculateTrig()">Решить</button>
+      <p id="trigResult"></p>
+    </div>
+
+    <!-- Форма для интегралов -->
+    <div id="integralForm" style="display: none;">
+      <h2>Интегралы</h2>
+      <input id="integralInput" type="text" placeholder="Введите функцию для интеграла" autofocus>
+      <button onclick="calculateIntegral()">Вычислить интеграл</button>
+      <p id="integralResult"></p>
+    </div>
+
+    <!-- Форма для физики -->
+    <div id="physicsForm" style="display: none;">
+      <h2>Физика</h2>
+      <input id="physicsInput" type="text" placeholder="Введите данные для расчета" autofocus>
+      <button onclick="calculatePhysics()">Вычислить</button>
+      <p id="physicsResult"></p>
+    </div>
+
+    <!-- Футер с информацией о разработчике -->
+    <footer>
+      <p class="developer-info">Разработал: <span class="highlight">Сунатов Салохиддин Асхобиддинович</span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Подключаем шрифт Poppins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2980b9, #8e44ad);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+.logo i {
+    margin-right: 10px;
+    font-size: 2.5em;
+    color: #3498db;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+/* Новый стиль для раздела выбора предмета */
+.task-selector {
+    margin-bottom: 40px;
+}
+
+.task-selector h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+select {
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: #2c3e50;
+    width: 70%;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #3498db;
+    transform: scale(1.05);
+}
+
+select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Стиль для формы */
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 80%;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Стиль для вывода результатов */
+p {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #2c3e50;
+}
+
+/* Стиль для заголовков в табах */
+.tabcontent h2 {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* Стиль футера */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.developer-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; /* Мелкий шрифт */
+    color: #888; /* Светло-серый цвет для текста */
+    font-style: italic; /* Курсив */
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+/* Выделение имени в футере */
+.developer-info .highlight {
+    color: #e74c3c; /* Яркий красный цвет */
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
